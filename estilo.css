@@ -1,1 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cabecalho {
+    background-color: #222;
+    color: white;
+    padding: 40px 0;
+}
+
+.cabecalho h1 {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+.informacoes p {
+    margin: 7px 0;
+}
+
+main {
+    padding: 40px 0;
+}
+
+.introducao {
+    margin-bottom: 30px;
+}
+
+.introducao h2 {
+    margin-bottom: 10px;
+}
+
+.introducao p {
+    color: #555;
+}
+
+.exercicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.exercicio {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    text-decoration: none;
+    color: #222;
+    transition: 0.2s;
+}
+
+.exercicio:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.exercicio span {
+    display: block;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.exercicio h3 {
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #222;
+    color: white;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .cabecalho h1 {
+        font-size: 1.8rem;
+    }
+
+    .exercicios {
+        grid-template-columns: 1fr;
+    }
+}
