@@ -1,3 +1,3 @@
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("Atividades Práticas carregadas.");
+    console.log("Atividades Práticas carregadas com sucesso.");
 });
